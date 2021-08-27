@@ -9,19 +9,21 @@ function Footer() {
             <nav className="contact">
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/alex-elliott-cpa/" class="linkedin">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/alex-elliott-cpa/" className="linkedin">Linkedin</a>
                     </li>
                     <li>
-                        <a href="https://github.com/alexelliott22" class="github">Github</a>
+                        <a href="https://github.com/alexelliott22" className="github">Github</a>
                     </li>
                     <li>
-                        <a href="mailto:alexelliott22@gmail.com" class="email">alexelliott22@gmail.com</a>
+                        <a href="mailto:alexelliott22@gmail.com" className="email">alexelliott22@gmail.com</a>
                     </li>
                     <li>
-                        <a href="tel:+1 6152900839" class="phone">(615)290-0839</a>
+                        <a href="tel:+1 6152900839" className="phone">(615)290-0839</a>
                     </li>
                 </ul>
             </nav>
         </footer>
     )
 }
+
+export default Footer;

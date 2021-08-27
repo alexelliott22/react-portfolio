@@ -1,22 +1,23 @@
-import React, {useEffect} from "react";
+import React from "react";
 
-function Nav(props) {
+function Nav({setNavSelected}) {
+
 
     return (
         <header>
             <nav className="website-navigation">
                 <ul>
-                    <li>
-                        <a href="#about-me">ABOUT</a>
+                    <li onClick={() => setNavSelected('about-me')}>
+                        <button>ABOUT</button>
                     </li>
-                    <li>
-                        <a href="#projects">PROJECTS</a>
+                    <li onClick={() => setNavSelected('projects')}>
+                        <button>PROJECTS</button>
                     </li>
-                    <li>
-                        <a href="#contact-me">CONTACT</a>
+                    <li onClick={() => setNavSelected('contact-me')}>
+                        <button>CONTACT</button>
                     </li>
-                    <li>
-                        <a href="#resume" target="_blank">RESUME</a>
+                    <li onClick={() => setNavSelected('resume')}>
+                        <button>RESUME</button>
                     </li>
                 </ul>
             </nav>
