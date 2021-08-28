@@ -9,10 +9,10 @@ function Footer() {
             <nav className="contact">
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/alex-elliott-cpa/" className="linkedin">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/alex-elliott-cpa/" className="linkedin" target='_blank' rel='noreferrer'>Linkedin</a>
                     </li>
                     <li>
-                        <a href="https://github.com/alexelliott22" className="github">Github</a>
+                        <a href="https://github.com/alexelliott22" className="github" target='_blank' rel='noreferrer'>Github</a>
                     </li>
                     <li>
                         <a href="mailto:alexelliott22@gmail.com" className="email">alexelliott22@gmail.com</a>

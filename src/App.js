@@ -1,36 +1,31 @@
 import React, {useState} from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
+
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Nav from './components/Nav';
+import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 
 function App() {
-  const [navSelected, setNavSelected] = useState('#about-me');
 
 
   return (
     <div>
-      <Nav setNavSelected={setNavSelected} />
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={About} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/projects' component={Portfolio} />
+          <Route path='/resume' component={Resume} />
+        </Switch>
+      </Router>
+      
       <main>
-        {(
-          () => {
-            switch(navSelected) {
-              case 'projects' === navSelected:
-                return (<Portfolio />);
-              case 'contact-me' === navSelected:
-                return(<Contact />);
-              case 'resume' === navSelected:
-                return(<Resume />);
-              case 'about-me' === navSelected:
-                return(<About />)
-              default:
-                return(<About />)
-            }
-          }
-        )()}
+        
       </main>
       <Footer />
     </div>
