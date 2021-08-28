@@ -23,10 +23,7 @@ function App() {
           <Route path='/resume' component={Resume} />
         </Switch>
       </Router>
-      
-      <main>
-        
-      </main>
+
       <Footer />
     </div>
   );
