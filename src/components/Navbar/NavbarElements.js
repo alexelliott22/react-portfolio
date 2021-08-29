@@ -6,9 +6,14 @@ export const Nav = styled.nav`
     background: #000;
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
     padding: 0.5rem calc((100vm - 1000px) / 2);
     z-index: 10;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 `
 
 export const NavLink = styled(Link)`
@@ -19,10 +24,6 @@ export const NavLink = styled(Link)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-
-    &.active {
-        color: #15cdfc;
-    }
 `
 
 export const Bars = styled(FaBars)`

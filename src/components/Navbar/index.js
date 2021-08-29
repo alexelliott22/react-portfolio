@@ -17,13 +17,13 @@ function Navbar() {
                 </NavLink>
                 <Bars />
                 <NavMenu>
-                    <NavLink to='/projects' activeStyle>
+                    <NavLink to='/projects' activeStyle={{color: '#15cdfc'}}>
                         Projects
                     </NavLink>
-                    <NavLink to='/contact' activeStyle>
+                    <NavLink to='/contact' activeStyle={{color: '#15cdfc'}}>
                         Contact
                     </NavLink>
-                    <NavLink to='/resume' activeStyle>
+                    <NavLink to='/resume' activeStyle={{color: '#15cdfc'}}>
                         Resume
                     </NavLink>
                 </NavMenu>

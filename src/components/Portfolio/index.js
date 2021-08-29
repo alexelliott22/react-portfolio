@@ -1,4 +1,6 @@
 import React from "react";
+import {Card, Col, Row, Container} from 'react-bootstrap';
+import {Github, Deploy} from './ProjectElements';
 
 function Portfolio() {
     const projects = [
@@ -41,19 +43,32 @@ function Portfolio() {
     ]
 
     return (
-        <section>
-            <ul>
-                {projects.map((project) => (
-                    <li key={project.name}>
-                        <a href={project.deployedLink} target="_blank" rel='noreferrer'>
-                            <img src={project.img} alt={project.name} />
-                        </a>
-                        <p>{project.name}</p>
-                        <p className="github-link"><a href={project.github} target='_blank' rel='noreferrer'>Github Repo</a></p>
-                        <p className="description">{project.description}</p>
-                    </li>
-                ))}
-            </ul>
+        <section id='projects'>
+            <Container>
+                <Row className="g-4 justify-content-center">
+                    {projects.map((project) => (
+                        <Col lg={4} md={6} sm={12} key={project.name} className='justify-content-center'>
+                            <Card style={{ width: '18rem' }} className='justify-content-center'>
+                                <Card.Img variant="top" src={project.img} alt={project.name}/>
+                                <Card.Body>
+                                    <Card.Title>{project.name}</Card.Title>
+                                    <Card.Text>
+                                        {project.description}
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Body style={{ margin: 'auto' }}>
+                                    <Card.Link href={project.github} 
+                                    target="_blank" rel='noreferrer' className='justify-content-center'  
+                                    ><Github /></Card.Link>
+
+                                    <Card.Link href={project.deployedLink} target="_blank" rel='noreferrer' className='justify-content-center' 
+                                    ><Deploy /></Card.Link>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
         </section>
     )
 }
