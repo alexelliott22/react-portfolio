@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {validateEmail} from '../../utils/helpers';
+import emailjs from 'emailjs';
 
 function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -29,33 +30,39 @@ function Contact() {
         }
     }
 
-    function handleSubmit(e) {
+    function sendEmail(e) {
         e.preventDefault();
-        console.log(formState)
-    }
+    
+        emailjs.sendForm('service_dpm3kik', 'template_5gefie9', e.target, 'user_WH0NHkgEcXosO77IhPidu')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
 
     return (
         <section>
             <h1 data-testid="h1tag">Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-            </div>
-            <div>
-                <label htmlFor="email">Email address:</label>
-                <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-            </div>
-            <div>
-                <label htmlFor="message">Message:</label>
-                <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-            </div>
-            {errorMessage && (
+            <form className="contact-form" onSubmit={sendEmail}>
                 <div>
-                    <p className="error-text">{errorMessage}</p>
+                    <label htmlFor="name">Name:</label>
+                    <input type="text" name="user_name" defaultValue={name} onBlur={handleChange} />
                 </div>
-            )}
-            <button data-testid="button" type="submit">Submit</button>
+                <div>
+                    <label htmlFor="email">Email address:</label>
+                    <input type="email" name="user_email" defaultValue={email} onBlur={handleChange} />
+                </div>
+                <div>
+                    <label htmlFor="message">Message:</label>
+                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                </div>
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
+                <button data-testid="button" type="submit" value='send'>Submit</button>
             </form>
       </section>
     )
