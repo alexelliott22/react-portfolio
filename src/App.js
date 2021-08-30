@@ -8,12 +8,14 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Sidebar from './components/Sidebar';
 
 
 function App() {
   return (
     <div>
       <Router>
+        <Sidebar />
         <Navbar />
         <Switch>
           <Route path='/' exact component={About} />

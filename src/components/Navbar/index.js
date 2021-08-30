@@ -3,32 +3,47 @@ import {
     Nav,
     NavLink,
     Bars,
-    NavMenu
+    NavMenu,
+    NavLogo,
+    NavbarContainer,
+    NavItem
 } from './NavbarElements'
 
 function Navbar() {
 
 
     return (
-        <header>
+        <>
             <Nav>
-                <NavLink to='/'>
-                    <h1>Alex</h1>
-                </NavLink>
-                <Bars />
-                <NavMenu>
-                    <NavLink to='/projects' activeStyle={{color: '#15cdfc'}}>
-                        Projects
-                    </NavLink>
-                    <NavLink to='/contact' activeStyle={{color: '#15cdfc'}}>
-                        Contact
-                    </NavLink>
-                    <NavLink to='/resume' activeStyle={{color: '#15cdfc'}}>
-                        Resume
-                    </NavLink>
-                </NavMenu>
+                <NavbarContainer>
+                    <NavLogo  to='/'>Alex</NavLogo>
+
+                    <Bars />
+    
+                    <NavMenu>
+                        <NavItem>
+                            <NavLink to='/projects'>
+                                Projects
+                            </NavLink>
+                        </NavItem>
+
+                        <NavItem>
+                            <NavLink to='/contact'>
+                                Contact
+                            </NavLink>
+                        </NavItem>
+
+                        <NavItem>
+                            <NavLink to='/resume'>
+                                Resume
+                            </NavLink>
+                        </NavItem>
+                    </NavMenu>
+                </NavbarContainer>
+  
+
             </Nav>
-        </header>
+        </>
     )
 }
 
