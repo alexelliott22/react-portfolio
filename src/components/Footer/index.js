@@ -6,25 +6,30 @@ import {GrGithub} from 'react-icons/gr';
 
 function Footer() {
     return (
-        <footer id='contact-me' className='mt-5'>
-            <Container className='text-center' fluid={true}>
-                <Row className='border-top p-3'>
+            <Container className='text-center footer' fluid={true}>
+                <Row className=' p-3 justify-content-center'>
                     <Col lg={12} className='p-0'>
-                    <h2>Contact</h2>
+                    <h2 className='footer-title'>Contact</h2>
                     </Col>
 
-                    <Col lg={12} className='p-0 '>   
-                        <a href="https://www.linkedin.com/in/alex-elliott-cpa/" className="linkedin" target='_blank' rel='noreferrer' lg={4}><FaLinkedin /></a>
-                    
-                        <a href="https://github.com/alexelliott22" className="github" target='_blank' rel='noreferrer' lg={4}><GrGithub /></a>                
-                    
-                        <a href="mailto:alexelliott22@gmail.com" className="email" lg={4}><HiOutlineMail /></a>
-                    
-                        <a href="tel:+1 6152900839" className="phone" lg={12}>(615)290-0839</a>
+                    <Col lg={1} className='p-0'>   
+                        <a href="https://www.linkedin.com/in/alex-elliott-cpa/" className="footer-icons" target='_blank' rel='noreferrer'><FaLinkedin /></a>
                     </Col>
+
+                    <Col lg={1} className='p-0'>
+                        <a href="https://github.com/alexelliott22" className="footer-icons" target='_blank' rel='noreferrer'><GrGithub /></a>                
+                    </Col>
+                    
+                    <Col lg={1} className='p-0'>
+                        <a href="mailto:alexelliott22@gmail.com" className="footer-icons"><HiOutlineMail /></a>
+                    </Col>
+                    
+                    <Col lg={1} className='p-0'>
+                        <a href="tel:+1 6152900839" className="phone">(615)290-0839</a>
+                    </Col>
+                    
                 </Row>
             </Container>
-        </footer>
     )
 }
 

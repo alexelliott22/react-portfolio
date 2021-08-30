@@ -9,41 +9,39 @@ import {
     NavItem
 } from './NavbarElements'
 
-function Navbar() {
+function Navbar({toggle}) {
 
+    
 
     return (
-        <>
-            <Nav>
-                <NavbarContainer>
-                    <NavLogo  to='/'>Alex</NavLogo>
+        <Nav>
+            <NavbarContainer>
+                <NavLogo  to='/'>Alex</NavLogo>
 
-                    <Bars />
-    
-                    <NavMenu>
-                        <NavItem>
-                            <NavLink to='/projects'>
-                                Projects
-                            </NavLink>
-                        </NavItem>
+                <Bars onClick={toggle} />
 
-                        <NavItem>
-                            <NavLink to='/contact'>
-                                Contact
-                            </NavLink>
-                        </NavItem>
+                <NavMenu>
+                    <NavItem>
+                        <NavLink to='/projects'>
+                            Projects
+                        </NavLink>
+                    </NavItem>
 
-                        <NavItem>
-                            <NavLink to='/resume'>
-                                Resume
-                            </NavLink>
-                        </NavItem>
-                    </NavMenu>
-                </NavbarContainer>
-  
+                    <NavItem>
+                        <NavLink to='/contact'>
+                            Contact
+                        </NavLink>
+                    </NavItem>
 
-            </Nav>
-        </>
+                    <NavItem>
+                        <NavLink to='/resume'>
+                            Resume
+                        </NavLink>
+                    </NavItem>
+                </NavMenu>
+            </NavbarContainer>
+
+        </Nav>
     )
 }
 

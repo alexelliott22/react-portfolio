@@ -5,18 +5,16 @@ import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
-import Sidebar from './components/Sidebar';
+import Home from './pages';
 
 
 function App() {
   return (
     <div>
       <Router>
-        <Sidebar />
-        <Navbar />
+        <Home />
         <Switch>
           <Route path='/' exact component={About} />
           <Route path='/contact' component={Contact} />
