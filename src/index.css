@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-main {
-	margin: 0 auto;
-	max-width: 90%;
-  padding: 50px 30px;
-}
-
 :root {
   --primary: #8c54ff;
   --secondary: #F3A847;
@@ -16,9 +10,17 @@ main {
   --dark: #000000;
   --darker: #111111;
   --error: rgb(228, 46, 1);
-  --footer: rgba(0,0,0,.9)
-
+  --footer: rgba(0,0,0,.9);
+  --background-color: rgb(63, 63, 63);
 }
+
+main {
+	margin: 0 auto;
+	max-width: 90%;
+  padding: 50px 30px;
+}
+
+
 
 html,
 body {
@@ -39,7 +41,7 @@ body {
 }
 
 #about-me {
-  background-color: rgb(63, 63, 63);
+  background-color: var(--background-color);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -61,17 +63,96 @@ body {
 
 #about-me img {
   border-radius: 50%;
-  width: 100%;
+  width: 75%;
   height: auto;
 }
 
 #about-me p {
-  padding: 0 0 0 80px;
+  padding: 0 50px 0 50px;
   font-size: x-large;
   overflow-wrap: break-word;
   color: var(--light);
 }
 
+#projects {
+background-color: var(--background-color);
+}
+
+.card-img-top {
+  box-shadow: 0 5px 10px rgba(255, 255, 255, .5);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.project-links {
+  display: inline-block;
+}
+
+#contact-me {
+  background-color: var(--background-color);
+  height: 75vh;
+}
+
+#contact-me h1 {
+  color: var(--light);
+  margin: auto;
+  text-align: center;
+  padding: 5vh 0 5vh 0;
+}
+
+.contact-form {
+  border: 3px solid var(--secondary);
+  background-color: rgba(255, 225, 56, 0.8);
+  padding: 20px;
+  color: var(--secondary);
+  width: 40%;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form button:hover {
+  background-color: var(--light);  
+}
+
+
+.form-input {
+  border: 1px solid var(--secondary);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--secondary);
+  width: 100%;
+  margin-bottom: 15px; 
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+.contact-form label {
+  margin: 0 5px;
+}
+
+.contact-form button {
+  color: var(--primary);
+  background-color: var(--secondary);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+}
 
 .footer {
   background-color: var(--footer);
@@ -84,6 +165,7 @@ body {
 .footer-icons {
   color: var(--light);
   font-size: 3rem;
+  display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
@@ -103,4 +185,9 @@ body {
     color: var(--light);
     padding: 35px 0 0 0;
   }
+
+  .contact-form {
+    width: 80%;
+  }
+
 }

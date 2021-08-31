@@ -45,18 +45,18 @@ function Portfolio() {
     return (
         <section id='projects'>
             <Container>
-                <Row className="g-4 justify-content-center">
+                <Row className="g-4 justify-content-center p-5">
                     {projects.map((project) => (
                         <Col lg={4} md={6} sm={12} key={project.name} className='justify-content-center'>
                             <Card style={{ width: '18rem' }} className='justify-content-center'>
-                                <Card.Img variant="top" src={project.img} alt={project.name}/>
+                                <Card.Img variant="top" src={project.img} alt={project.name} className='card-img-top'/>
                                 <Card.Body>
                                     <Card.Title>{project.name}</Card.Title>
                                     <Card.Text>
                                         {project.description}
                                     </Card.Text>
                                 </Card.Body>
-                                <Card.Body style={{ margin: 'auto' }}>
+                                <Card.Body className='project-links'>
                                     <Card.Link href={project.github} 
                                     target="_blank" rel='noreferrer' className='justify-content-center'  
                                     ><Github /></Card.Link>
