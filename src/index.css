@@ -4,14 +4,13 @@
 
 :root {
   --primary: #8c54ff;
-  --secondary: #F3A847;
+  --secondary: grey;
   --tertiary: #B12704;
-  --light: #fafafa;
+  --light: #E0E2DB;
   --dark: #000000;
-  --darker: #111111;
   --error: rgb(228, 46, 1);
   --footer: rgba(0,0,0,.9);
-  --background-color: rgb(63, 63, 63);
+  --background-color: #2E3532;
 }
 
 main {
@@ -42,7 +41,7 @@ body {
 
 #about-me {
   background-color: var(--background-color);
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
 }
@@ -98,7 +97,7 @@ background-color: var(--background-color);
 
 #contact-me {
   background-color: var(--background-color);
-  height: 75vh;
+  height: 80vh;
 }
 
 #contact-me h1 {
@@ -109,10 +108,10 @@ background-color: var(--background-color);
 }
 
 .contact-form {
-  border: 3px solid var(--secondary);
-  background-color: rgba(255, 225, 56, 0.8);
+  border: 3px solid var(--dark);
+  background-color: var(--secondary);
   padding: 20px;
-  color: var(--secondary);
+  color: var(--dark);
   width: 40%;
   margin: auto;
   border-radius: 15px;
@@ -146,12 +145,35 @@ background-color: var(--background-color);
 }
 
 .contact-form button {
-  color: var(--primary);
+  color: var(--dark);
   background-color: var(--secondary);
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
+}
+
+#resume {
+ height: 80vh;
+ padding-left: 5vh; 
+ color: var(--light);
+ background-color: var(--background-color);
+}
+
+#resume h1 {
+  padding: 5vh 0 3vh 0;
+}
+
+#resume-download-link {
+  padding: 0 0 3vh 0;
+}
+
+#resume-download-link a {
+  text-decoration: none;
+}
+
+#resume ul {
+  list-style-type: none;
 }
 
 .footer {
