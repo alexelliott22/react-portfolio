@@ -89,6 +89,11 @@ background-color: var(--background-color);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
+  color: var(--dark);
+}
+
+.card-text {
+  color: var(--dark);
 }
 
 .project-links {
