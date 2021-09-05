@@ -11,15 +11,17 @@ import Home from './pages';
 
 
 function App() {
+  const url = '/react-portfolio'
+
   return (
     <div>
       <Router>
         <Home />
         <Switch>
-          <Route path='/' exact component={About} />
-          <Route path='/contact' component={Contact} />
-          <Route path='/projects' component={Portfolio} />
-          <Route path='/resume' component={Resume} />
+          <Route path={`${url}/`} exact component={About} />
+          <Route path={`${url}/contact`} component={Contact} />
+          <Route path={`${url}/projects`} component={Portfolio} />
+          <Route path={`${url}/resume`} component={Resume} />
         </Switch>
       </Router>
 

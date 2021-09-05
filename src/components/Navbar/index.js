@@ -10,31 +10,31 @@ import {
 } from './NavbarElements'
 
 function Navbar({toggle}) {
-
+    const url = '/react-portfolio'
     
 
     return (
         <Nav>
             <NavbarContainer>
-                <NavLogo  to='/'>Alex</NavLogo>
+                <NavLogo  to={`${url}/`}>Alex</NavLogo>
 
                 <Bars onClick={toggle} />
 
                 <NavMenu>
                     <NavItem>
-                        <NavLink to='/projects'>
+                        <NavLink to={`${url}/projects`}>
                             Projects
                         </NavLink>
                     </NavItem>
 
                     <NavItem>
-                        <NavLink to='/contact'>
+                        <NavLink to={`${url}/contact`}>
                             Contact
                         </NavLink>
                     </NavItem>
 
                     <NavItem>
-                        <NavLink to='/resume'>
+                        <NavLink to={`${url}/resume`}>
                             Resume
                         </NavLink>
                     </NavItem>

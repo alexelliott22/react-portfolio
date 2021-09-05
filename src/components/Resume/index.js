@@ -4,7 +4,7 @@ function Resume() {
     return (
         <section id='resume'>
             <h1>Resume</h1>
-            <h2 id='resume-download-link'>Download my Resume <a href='https://drive.google.com/uc?id=1YlODbeJvfQpvWbISIg2M8MP02QtCrl5V&export=download'>here.</a></h2>
+            <h2 id='resume-download-link'>Download my Resume <a href='https://drive.google.com/uc?id=1vMWhPY0hLFWPfSLoInMvZ_w-XM1abUa9&export=download'>here.</a></h2>
     
             <h2>Front-end Proficiencies</h2>
             <ul>
