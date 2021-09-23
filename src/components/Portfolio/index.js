@@ -33,7 +33,7 @@ function Portfolio() {
             img: require('../../assets/website-imgs/weather-dash.PNG').default
         },
         {
-            name: 'Socail Network API',
+            name: 'Social Network API',
             description: 'This project built an api system for a social network site that allows for users to be created, add other users as friends, create posts, and add reactions to those posts.',
             github: 'https://github.com/alexelliott22/social-network-api',
             deployedLink: 'https://github.com/alexelliott22/social-network-api',
