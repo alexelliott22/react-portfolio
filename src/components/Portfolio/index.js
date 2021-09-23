@@ -19,9 +19,9 @@ function Portfolio() {
             img: require('../../assets/website-imgs/link-up.png').default
         },
         {
-            name: 'Employee Manager',
-            description: 'This command-line application allows an employer to input the members of their team and when they are finished an HTML page is generated with all their information.',
-            github: 'https://github.com/alexelliott22/employee-content-management',
+            name: 'Fixed Asset Subledger',
+            description: 'Fixed Assets Subsidiary Ledger is used to manage purchase, sale, allocation, and retirement of fixed assets. This particular ledger is used to keep track of monthly depreciation of a small businesses fixed assets. This app keeps track of asset book value, month purchased, useful life, monthly depreciation expense, and accumulated depreciation. The app allows tracking of multiple assets, aligning them into rows.',
+            github: 'https://github.com/alexelliott22/Subsidiary-Ledger',
             deployedLink: 'https://github.com/alexelliott22/employee-content-management',
             img: require('../../assets/website-imgs/empoyee-manager.PNG').default
         },
@@ -29,8 +29,8 @@ function Portfolio() {
             name: 'Weather Dashboard',
             description: 'This web based application helps a user frind the weather in any given city they are searching for along with a 5 day forcast for that city as well.',
             github: 'https://github.com/alexelliott22/weather-dashboard',
-            deployedLink: 'https://alexelliott22.github.io/weather-dashboard/',
-            img: require('../../assets/website-imgs/weather-dash.png').default
+            deployedLink: 'https://fa-subledger-747.herokuapp.com/',
+            img: require('../../assets/website-imgs/fixed-asset-subledger.png').default
         },
         {
             name: 'Socail Network API',
