@@ -1,10 +1,10 @@
 # react-portfolio
 
 ## Deployed Webstie link
-https://alexelliott22.github.io/portfolio/
+https://alexelliott22.github.io/react-portfolio/
 
 ## Github page
-https://github.com/alexelliott22/portfolio
+https://github.com/alexelliott22/react-portfolio
 
 
 ## Summary
