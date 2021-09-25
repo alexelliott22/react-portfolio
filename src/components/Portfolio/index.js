@@ -22,14 +22,14 @@ function Portfolio() {
             name: 'Fixed Asset Subledger',
             description: 'This project allows the user to add assets to a subledger that tracks their monthly depreciation expense as well as summing their accumulated depreciation.',
             github: 'https://github.com/alexelliott22/Subsidiary-Ledger',
-            deployedLink: 'https://github.com/alexelliott22/employee-content-management',
+            deployedLink: 'https://fa-subledger-747.herokuapp.com/',
             img: require('../../assets/website-imgs/fixed-asset-subledger.png').default
         },
         {
             name: 'Weather Dashboard',
             description: 'This web based application helps a user frind the weather in any given city they are searching for along with a 5 day forcast for that city as well.',
             github: 'https://github.com/alexelliott22/weather-dashboard',
-            deployedLink: 'https://fa-subledger-747.herokuapp.com/',
+            deployedLink: 'https://alexelliott22.github.io/weather-dashboard/',
             img: require('../../assets/website-imgs/weather-dash.PNG').default
         },
         {
